@@ -1,0 +1,17 @@
+title: Afternoon Rusting
+description: "This blog is designed to cover topics related to both Rust & C++ languages.
+This blog has emphasis on strong typing and design choices."
+baseurl: "/afternoon_rusting"
+url: "http://oribenshir.github.io/afternoon_rusting"
+tagline: "Blog By A Rusty Developer"
+
+# Build settings
+markdown: kramdown
+kramdown:
+    auto_ids: false
+paginate: 4
+paginate_path: "/blog/page:num/"
+permalink: /blog/:title
+plugins:
+  - jekyll-paginate
+
