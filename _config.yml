@@ -15,3 +15,5 @@ permalink: /blog/:title
 plugins:
   - jekyll-paginate
 
+
+theme: jekyll-theme-cayman
