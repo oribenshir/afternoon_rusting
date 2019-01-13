@@ -99,4 +99,4 @@ println!("{}", owner);
 Here we gave the owner a new value, and now we can use the variable `owner` again. Note though we had to mark it as mutable in order to be able to assign a new value. (Rust variable are immutable by default, and can't be changed after the first assignment).
 > After a value is moved from one variable to another, we can't use the original variable anymore, unless we give it a new value
 
-I am done for this post, in the next post I will continue to discuss *ownership*. I still want to cover *borrowing*, and the relationship between *ownership* and functions.
+In the next post I will continue to discuss *ownership*. Iit will cover *borrowing*, and the relationship between *ownership* and functions.
