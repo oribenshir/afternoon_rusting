@@ -88,7 +88,7 @@ let owner = String::from("Money");
 let another_owner = owner;
 println!("{}", another_owner);
 ```
-But isn't it exactly like the first example? Almost, I had to bend the rules in the first example because I wanted to avoid discussing *moving* too soon. Rust is so determined to avoid duplication of ownership. It has just moved the value from the first owner to the second. So what was the problem in the first example I've tried to print the value through the original owner, which is not the owner of the value anymore. After a value is moved from one variable to another, we can't use the original variable anymore, unless we give it a new value:
+But isn't it exactly like the first example? Almost, I had to bend the rules in the first example because I wanted to avoid discussing *moving* too soon. Rust is so determined to avoid duplication of ownership, it has just moved the value from the first owner to the second. So what was the problem in the first example? I've tried to print the value through the original owner, which is not the owner of the value anymore. After a value is moved from one variable to another, we can't use the original variable anymore, unless we give it a new value:
 ```rust
 let mut owner = String::from("Money");
 let another_owner = owner;
