@@ -7,7 +7,7 @@ excerpt_separator: <!--more-->
 ---
 
 
-During my own learning of Rust, the first unique concept I've encountered was *Ownership*. While I don't think I'll ever be able to top the excellent job of the [Rust Book](https://doc.rust-lang.org/book/ "The Rust Book") in covering *ownership*, I do want to share my point of view on the topic. Furthermore, I think this concept lays the mindset of Rust development and design. Moreover, it is probably the foundation for any future post I'll share. Personally, I hope this blog will be able to address any developers, with various backgrounds, hence covering *ownership* first is a must.<!--more-->
+During my own learning of Rust, the first unique concept I've encountered was *Ownership*. While I don't think I'll ever be able to top the excellent job of the [Rust Book](https://doc.rust-lang.org/book/ "The Rust Book") in covering *ownership*, I do want to share my point of view on the topic. I think this concept lays the mindset of Rust development and design and it is probably the foundation for any future post I'll share. Personally, I hope this blog will be able to address any developers, with various backgrounds, hence covering *ownership* first is a must.<!--more-->
 
 ### Ownership In The Real World
 
