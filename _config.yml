@@ -10,6 +10,7 @@ markdown: kramdown
 kramdown:
     auto_ids: false
 paginate: 4
+future: false
 paginate_path: "/blog/page:num/"
 permalink: /blog/:title
 plugins:
