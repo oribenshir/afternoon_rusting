@@ -2,7 +2,7 @@
 layout: post
 title:  "Ownership - Part 2"
 date:   2019-1-13
-tags: [welcome, Rust, Ownership, Introduction Level]
+tags: [Rust, Ownership, Introduction Level]
 excerpt_separator: <!--more-->
 ---
 
