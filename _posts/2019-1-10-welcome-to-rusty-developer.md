@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Afternoon Rusting"
-date:   2018-12-24
+date:   2019-1-10
 tags: [welcome, Rust, C++]
 excerpt_separator: <!--more-->
 ---
