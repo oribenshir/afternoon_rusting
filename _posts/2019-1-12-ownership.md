@@ -82,13 +82,13 @@ Those types can be copied:
 * Tuples, if they only contain types that are also Copy. For example, (i32, i32) is Copy, but (i32, String) is not.
 
 ### Moving
-What if I don't want to own the value anymore, I've done using it, and someone else wants it now? If it is a simple value, I can use copy. However, if it is a complex value, like a string I don't have to clone it, instead, I can move it. It is cheaper, plus it is easier to write. Just write a regular assignment:
+What if I don't want to own the value anymore, I've done using it, and someone else wants it now? If it is a simple value, I can copy it. However, if it is a complex value, like a *string* I don't have to clone it, instead, I can move it. The code will perform faster and it is even easier to write:
 ```rust
 let owner = String::from("Money");
 let another_owner = owner;
 println!("{}", another_owner);
 ```
-But isn't it exactly like the first example? Well almost, I had to bend the rules in the first example because I had to avoid discussing *moving* too soon. Rust is so determined to avoid duplication of ownership. It has just moved the value from the first owner to the second. So what was the problem in the first example? I've tried to print the value through the original owner, which is not the owner of the value anymore. After a value is moved from one variable to another, we can't use the original variable anymore, unless we give it a new value:
+But isn't it exactly like the first example? Almost, I had to bend the rules in the first example because I had to avoid discussing *moving* too soon. Rust is so determined to avoid duplication of ownership. It has just moved the value from the first owner to the second. So what was the problem in the first example I've tried to print the value through the original owner, which is not the owner of the value anymore. After a value is moved from one variable to another, we can't use the original variable anymore, unless we give it a new value:
 ```rust
 let mut owner = String::from("Money");
 let another_owner = owner;
