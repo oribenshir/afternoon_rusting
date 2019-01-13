@@ -55,8 +55,8 @@ This code won't compile for 2 different reasons. First, we introduced the variab
 
 In an ideal world, we would be done with *ownership* at this point. However, those rules are extremely restrictive and do not allow us to do much. They also completely ignoring various aspects of the real world, how do we *borrow*, how can we *share* ownership, and what about *cloning* an object or *moving* the ownership? So let's continue exploring those related topics.
 
-### Cloning And Coping
-While in the physical world, it is not very easy to think about *cloning* an object, when discussing about information it becomes a common action. Think about telling a friend about some news, you have basically cloned it between you, as you both know it now. Another nice and rare example from the physical world is candle fire, once you lit one candle, you can clone its fire to another candle, without the fire at the first candle going away. So how you can do it in Rust? Well, turns out **usually** we have a function for it called `clone()`, this simple:
+### Cloning And Copying
+While in the physical world, it is not very easy to think about *cloning* an object, when discussing about information it becomes a common action. Think about sharing a piece of news with a friend, you have cloned the information, as you both know it now. Another nice and rare example from the physical world is candle fire, once you lit one candle, you can clone its fire to another, without compromise the original. So how you can do it in Rust? Well, turns out **usually** we have a function for it called `clone()`, this simple:
 ```rust
 let owner = String::from("Money");
 let another_owner = owner.clone();
@@ -72,7 +72,7 @@ let another_owner = owner;
 println!("{}", owner);
 ```
 
-Unlike before, this code works and compiles. However, we didn't use `clone()`, so what happens here? Well for simple integers we don't need to use clone, they are automatically *copied*. What is the difference between *copy* and *clone*? When copying is "simple enough", Rust will *copy* it automatically. When *coping* is an expensive operation Rust want us to be explicit, and use *clone* instead. 
+Unlike before, this code works and compiles. However, we didn't use `clone()`, so what happens here? Well for simple integers we don't need to use clone, they are automatically *copied*. What is the difference between *copy* and *clone*? When copying is "simple enough", Rust will *copy* it automatically. When *copying* is an expensive operation Rust want us to be explicit, and use *clone* instead. 
 
 Those types can be copied:
 * All the integer types, such as u32.
@@ -82,7 +82,7 @@ Those types can be copied:
 * Tuples, if they only contain types that are also Copy. For example, (i32, i32) is Copy, but (i32, String) is not.
 
 ### Moving
-What if I don't want to own the value anymore, I've done using it, and someone else wants it now. If it is a simple value, I can use copy. However, if it is a complex value, like a string I don't have to clone it, instead, I can move it. It is cheaper, plus it is easier to write. Just write a regular assignment:
+What if I don't want to own the value anymore, I've done using it, and someone else wants it now? If it is a simple value, I can use copy. However, if it is a complex value, like a string I don't have to clone it, instead, I can move it. It is cheaper, plus it is easier to write. Just write a regular assignment:
 ```rust
 let owner = String::from("Money");
 let another_owner = owner;
