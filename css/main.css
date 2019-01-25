@@ -589,16 +589,8 @@ h3:target + .taglist .return {
 	width: 35px;
 	height: 35px;
 	margin: 5px;
-  }
-  
-  .sharebuttons .reddit-share svg {
-	fill: #FF4500;
-  }
-  
-  .sharebuttons .twitter-share svg {
-	fill: #1DA1F2;
-  }
-  
+  } 
+
   .sharebuttons .linkedin-share svg {
 	fill: #0077B5;
   }
@@ -607,7 +599,37 @@ h3:target + .taglist .return {
 	fill: #3B5998;
   }
   
+  .sharebuttons-small {
+	margin: 0 auto 0 auto;
+  }
 
+  .sharebuttons-small ul {
+	margin: 20px 0 0 0;
+	text-align: left;
+	padding-inline-start: 0px;
+  }
+  
+  .sharebuttons-small ul li {
+	display: inline;
+  }
+  
+  .sharebuttons-small ul li a {
+	text-decoration: none;
+  }
+  
+  .sharebuttons-small ul li svg {
+	width: 25px;
+	height: 25px;
+	margin: 3px;
+  }
+  
+  .sharebuttons-small .linkedin-share svg {
+	fill: #0077B5;
+  }
+
+  .sharebuttons-small .facebook-share svg {
+	fill: #3B5998;
+  }
 /* -------------------------------------------------- 
    sidebar styles
 -----------------------------------------------------*/

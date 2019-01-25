@@ -9,6 +9,9 @@ page-type: post
         <h2>{{page.title}}</h2>
         <time itemprop="dateCreated" datetime="{{page.date}}">
           {{ page.date | date: "%B %-d, %Y" }}</time>
+        <section class="social-share">
+            {% include share-bar-top.html %}
+        </section>
       </header>
       {{content}}
       <footer>
