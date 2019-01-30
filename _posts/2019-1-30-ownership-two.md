@@ -2,7 +2,7 @@
 layout: post
 title:  "Ownership - Part 2"
 date:   2019-1-30
-tags: [welcome, Rust, C++]
+tags: [welcome, Rust, Ownership]
 excerpt_separator: <!--more-->
 ---
 
