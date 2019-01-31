@@ -5,13 +5,13 @@
             <p class="sharetitle"> Share this: </p>
         </li>
         <li class="reddit-share">
-            <a href="http://www.reddit.com/submit?url={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&title={{ page.title | default:"" | uri_escape }}"
+            <a href="http://www.reddit.com/submit?url={{ page.url | replace:'index.html','' | prepend: site.url | uri_escape}}&title={{ page.title | default:"" | uri_escape }}"
                 target="_blank" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;">
                 {% include social/reddit.svg %}
             </a>
         </li>
         <li class="twitter-share">
-            <a href="https://twitter.com/intent/tweet?via=USERNAME&url={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&text={{ page.title | default:"" | uri_escape}}"
+            <a href="https://twitter.com/intent/tweet?via=USERNAME&url={{ page.url | replace:'index.html','' | prepend: site.url | uri_escape}}&text={{ page.title | default:"" | uri_escape}}"
                 target="_blank" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;">
                 {% include social/Twitter_icon.svg %}
             </a>
@@ -22,7 +22,7 @@
                 </a>
             </li>
         <li class="linkedin-share">
-            <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&title={{ page.title | default:"" | uri_escape}}"
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | replace:'index.html','' | prepend: site.url | uri_escape}}&title={{ page.title | default:"" | uri_escape}}"
                 target="_blank" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;">
                 {% include social/linkedin.svg %}
             </a>
