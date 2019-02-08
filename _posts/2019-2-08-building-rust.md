@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Builder Pattern in Rust"
-date:   2019-2-07
+date:   2019-2-08
 tags: [Rust, Library Design, Design Pattern]
 excerpt_separator: <!--more-->
 ---
