@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Methods, overloading and one weird impl"
-date:   2019-2-14
+date:   2019-2-22
 tags: [Rust, traits, overloading, C++ Expereince]
 excerpt_separator: <!--more-->
 ---
