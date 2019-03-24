@@ -86,7 +86,7 @@ I have created one list, and I dropped it as expected. But I have created four n
 ## Understanding The Issue
 
 Why do the nodes in the list itself are not being dropped together with the list itself? It might be hard to see it without prior experience, but carefully looking at the nodes can give some clues. We have two nodes, each point to the other (As we have doubly linked list), let us call them A and B. As in the following image:
-![Cyclic Graph](/images/ListPostCyclic.png)
+![Cyclic Graph]({{site.baseurl}}/images/ListPostCyclic.png)
 
 Following Rust ownership rules, A point to B, therefore B won't be dropped. But B points to A, so A can't be dropped just yet as well. Consequently, we don't drop any of the nodes in the list. We can overcome the issue by manually disconnecting each of the nodes from its adjacents nodes, which is basically what our remove function does.
 
