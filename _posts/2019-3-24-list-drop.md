@@ -136,7 +136,7 @@ Note That I've changed the last loop in the test method, to loop over a referenc
 
 I sense a possible common bug in container implementation caused by this behaviour. What if the last element needs access to some state which is being stored inside the container? When handling the last element in a consuming iterator, the container does not exist anymore. Edit: I read this sentence about a week after I wrote it originally, which during this week I have learned that Rust would not compile such an iteration. It is both great, and annoying, as I have yet to find a good workaround for this issue.
 
-Admittedly, once I saw the issue I immediately knew what happened. I was even aware of this issue at one point in the implementation, yet I forgot about it. In this post, I wanted to go with you a step by step, to check how my instinct as a developer holds within Rust. And share with you my way of handling bugs in general. And again, I want to thank you all for the feedback so far!
+Admittedly, once I saw the issue I immediately knew what happened. I was even aware of this issue at one point in the implementation, yet I forgot about it. In this post, I wanted to go a step by step, to check how my instinct as a developer holds within Rust. And share my way of handling bugs. And again, I want to thank you all for the feedback so far!
 
-Thanks, until the next time.
+Until the next time.
 A rusty developer
