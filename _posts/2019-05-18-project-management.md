@@ -6,7 +6,7 @@ tags: [Rust, Rust for OOP, Creates, Modules, Tutorial]
 excerpt_separator: <!--more-->
 ---
 
-We are starting our new series, "Rust for OOP." And the first task is to start a new project. Of course, we need the tools to scale up this project. Today we'll cover how to start a new project. We will also see the component and concepts Rust provides us with to scale up the project. Workspaces, libraries, executables, modules, crates, privacy boundary, paths, and external crates are all going to take part in our post today. <!--more-->
+We are starting our new series, "Rust for OOP." And the first task is to start a new project. Of course, we need the tools to scale it up. We will also see the component and concepts Rust provides us with to scale up the project. Workspaces, libraries, executables, modules, crates, privacy boundary, paths, and external crates are all going to take part in our post today. <!--more-->
 
 Be sure to check the series introduction post [here]({{site.url}}/{% post_url 2019-05-15-rust-for-oop %} "Series Introduction").
 
