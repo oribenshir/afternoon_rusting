@@ -30,3 +30,7 @@ Some of the topics which might get into the series:
 
 My goal for the series is to target developers with a similar background as mine, meaning developers who are learning Rust after mastering a programming language with a high emphasis on Object-Oriented Programming (e.g., Java, C++, Python, etc...) You can probably get along quite fine without any knowledge in Rust. You will have to understand ownership though. You can read my 2 parts series about ownership [here]({{site.url}}/{% post_url 2019-1-29-ownership %} "Ownership").
 Finally, I don’t intend to cover some of the basics syntax and concepts of the language (e.g., structs, basic control flows), I think it is pretty easy to catch up on these.
+
+Other Post in the Series:
+* [Project Management]({{site.url}}/{% post_url 2019-05-18-project-management %} "Project Management").
+* [Enum & Pattern Matching - Part 1]({{site.url}}/{% post_url 2019-06-17-enum-and-pattern-matching-part-1 %} "Enum & Pattern Matching - Part 1").

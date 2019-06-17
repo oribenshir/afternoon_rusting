@@ -2,13 +2,15 @@
 layout: post
 title:  "Rust for OOP - Project Management"
 date:   2019-5-18
-tags: [Rust, Rust for OOP, Creates, Modules, Tutorial]
+tags: [Rust, Rust for OOP, Modules, Tutorial]
 excerpt_separator: <!--more-->
 ---
 
 We are starting our new series, "Rust for OOP." And the first task is to start a new project. Of course, we need the tools to scale it up. We will also see the component and concepts Rust provides us with to scale up the project. Workspaces, libraries, executables, modules, crates, privacy boundary, paths, and external crates are all going to take part in our post today. <!--more-->
 
-Be sure to check the series introduction post [here]({{site.url}}/{% post_url 2019-05-15-rust-for-oop %} "Series Introduction").
+Other Post in the Series:
+* [Series Introduction]({{site.url}}/{% post_url 2019-05-15-rust-for-oop %} "Series Introduction").
+* [Enum & Pattern Matching - Part 1]({{site.url}}/{% post_url 2019-06-17-enum-and-pattern-matching-part-1 %} "Enum & Pattern Matching - Part 1").
 
 Important note: This post is up to date with changes from Rust 2018, you will need Rust with version 1.32 or higher for everything to work.
 
