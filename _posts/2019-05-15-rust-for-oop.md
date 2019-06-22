@@ -34,3 +34,4 @@ Finally, I don’t intend to cover some of the basics syntax and concepts of the
 Other Post in the Series:
 * [Project Management]({{site.url}}/{% post_url 2019-05-18-project-management %} "Project Management").
 * [Enum & Pattern Matching - Part 1]({{site.url}}/{% post_url 2019-06-17-enum-and-pattern-matching-part-1 %} "Enum & Pattern Matching - Part 1").
+* [Enum & Pattern Matching - Part 2]({{site.url}}/{% post_url 2019-06-22-enum-and-pattern-matching-part-2 %} "Enum & Pattern Matching - Part 2").

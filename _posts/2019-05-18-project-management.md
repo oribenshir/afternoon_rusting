@@ -11,6 +11,7 @@ We are starting our new series, "Rust for OOP." And the first task is to start a
 Other Post in the Series:
 * [Series Introduction]({{site.url}}/{% post_url 2019-05-15-rust-for-oop %} "Series Introduction").
 * [Enum & Pattern Matching - Part 1]({{site.url}}/{% post_url 2019-06-17-enum-and-pattern-matching-part-1 %} "Enum & Pattern Matching - Part 1").
+* [Enum & Pattern Matching - Part 2]({{site.url}}/{% post_url 2019-06-22-enum-and-pattern-matching-part-2 %} "Enum & Pattern Matching - Part 2").
 
 Important note: This post is up to date with changes from Rust 2018, you will need Rust with version 1.32 or higher for everything to work.
 
