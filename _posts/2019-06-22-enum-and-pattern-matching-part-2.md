@@ -12,7 +12,7 @@ Other Post in the Series:
 * [Series Introduction]({{site.url}}/{% post_url 2019-05-15-rust-for-oop %} "Series Introduction").
 * [Project Management]({{site.url}}/{% post_url 2019-05-18-project-management %} "Project Management").
 * [Enum & Pattern Matching - Part 1]({{site.url}}/{% post_url 2019-06-17-enum-and-pattern-matching-part-1 %} "Enum & Pattern Matching - Part 1").
-
+* [Closures]({{site.url}}/{% post_url 2019-07-19-closures %} "Closures").
 ### If As An Enum
 
 The first example will demonstrate a naive approach of pushing an if statement into the type system. It will be far from perfect, but it should be easy to understand while showing the potential of this idea. We will start with a widespread code segment we encounter regularly. We have some functions with the following format:

@@ -12,6 +12,7 @@ Other Post in the Series:
 * [Series Introduction]({{site.url}}/{% post_url 2019-05-15-rust-for-oop %} "Series Introduction").
 * [Project Management]({{site.url}}/{% post_url 2019-05-18-project-management %} "Project Management").
 * [Enum & Pattern Matching - Part 2]({{site.url}}/{% post_url 2019-06-22-enum-and-pattern-matching-part-2 %} "Enum & Pattern Matching - Part 2").
+* [Closures]({{site.url}}/{% post_url 2019-07-19-closures %} "Closures").
 
 A small note for people who are reading this post without going through the *Rust Book* first. I will use some basic concepts without going into too much details, specifically [structs](https://doc.rust-lang.org/book/ch05-00-structs.html "Structs in Rust"), [generic](https://doc.rust-lang.org/book/ch10-01-syntax.html "Generics in Rust") and [basic closures](https://doc.rust-lang.org/book/ch13-01-closures.html "Basics of closures in Rust"). If you have met the relevant concepts before in a different language, you will probably be fine. Otherwise, you might want to jump to the appropriate chapter in the *Rust Book*.
 
