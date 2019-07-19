@@ -282,7 +282,7 @@ th {
   Global settings
 -----------------------------------------------------*/
 body {
-	font: 100% 'Roboto Slab', 'sans-serif';
+	font-family: 'Montserrat', sans-serif;
 	background: white;
 	direction: ltr;
 }
@@ -384,6 +384,12 @@ nav li a {
 .posts, .archive {
 	padding: 0 1em 0;
 }
+article ul {
+	line-height: 1.5;
+}
+article ol {
+	line-height: 1.5;
+}
 article header {
 	padding-bottom: 0.5em;
 	margin-bottom: 1em;
@@ -421,8 +427,23 @@ a.more:before {
 a.more:after {
 	content: ']';
 }
+code {
+	font-family: "Source Code Pro", Consolas, "Ubuntu Mono", Menlo, "DejaVu Sans Mono", monospace, monospace;
+}
+li code {
+	font-size: 0.875em;
+	font-weight: bold;
+	background-color: rgb(248, 248, 248);
+	color: rgb(12, 115, 250);
+	padding-left: 0.15em;
+	padding-right: 0.15em;
+    border-top: 1px solid #e1e1e1;
+    border-left: 1px solid #e1e1e1;
+    border-bottom: 1px solid #f0f0f0;
+    border-right: 1px solid #f0f0f0;
+}
 p code {
-	font-size: 1.1em;
+	font-size: 0.875em;
 	font-weight: bold;
 	background-color: rgb(248, 248, 248);
 	color: rgb(12, 115, 250);
@@ -446,7 +467,6 @@ pre {
 	white-space: -pre-wrap;
 	white-space: -o-pre-wrap;
 	word-wrap: break-word;
-	width: 90%;
 }
 pre.wrong {
 	border-left-color: red;
@@ -667,9 +687,6 @@ aside li {
 .github {
 	background: url(../images/github.svg) no-repeat;
 }
-.fb {
-	background: url(../images/facebook.svg) no-repeat;
-}
 .linked {
 	background: url(../images/linkedin.svg) no-repeat;
 }
@@ -772,7 +789,6 @@ nav li a:hover {
 
 pre {
 	font-size: 1.2em;
-	width: 90%;
 }
 
 dd{
@@ -792,25 +808,44 @@ html {
 	background: #6d6d6d;
 }
 body {
-	width: 80%;
 	margin: 0 auto;
+	margin-right: 20%;
+	background: #6d6d6d; 
+}
+footer {
+	margin-left: 25%;
 }
 .page-header {
 	padding: 0 3%;
 	padding-top: 1em;
+	padding-bottom: 1em;
+}
+.page-footer {
+	margin-top: 0em;
 }
 .posts, .archive {
 	float: right;
-	width: 70%;
+	width: 75%;
 	padding-right: 2.5%;
 }
+header {
+	background: white;
+	margin-bottom: 0%;
+	padding-bottom: 2em;
+}
 aside {
+	background: white;
 	float: left;
-	width: 30%;
-	max-width: 320px;
+	width: 25%;
+	/*max-width: 320px;*/
 	padding-top: 1em;
 	padding-left: 2.5%;
 }
+
+article {
+	background: white;
+}
+
 
 /* -------------------------------------------------- 
    header styles
@@ -874,97 +909,3 @@ a.more {
 	text-align: center;
 }
 }
-
-/* -------------------------------------------------- 
-   Very large screen styles
------------------------------------------------------*/
-@media only screen and (min-width: 1300px) {
-	/* -------------------------------------------------- 
-	   layout styles
-	-----------------------------------------------------*/
-	html {
-		background: #6d6d6d;
-	}
-	body {
-		width: 1100px;
-		margin: 0 auto;
-	}
-	.page-header {
-		padding: 0 3%;
-		padding-top: 1em;
-	}
-	.posts, .archive {
-		float: right;
-		width: 70%;
-		padding-right: 2.5%;
-	}
-	aside {
-		float: left;
-		width: 30%;
-		max-width: 320px;
-		padding-top: 1em;
-		padding-left: 2.5%;
-	}
-	
-	/* -------------------------------------------------- 
-	   header styles
-	-----------------------------------------------------*/
-	header h1 {
-		font-size: 3em;
-	}
-	header p {
-		font: 1em 'Open Sans', 'Oswald', 'Helvetica Narrow', Arial, sans-serif;
-		font-weight: 400;
-		color: #666;
-		text-transform: uppercase;
-	}
-	/* -------------------------------------------------- 
-	   top navigation styles
-	-----------------------------------------------------*/
-	nav {
-		background: none;
-		margin-bottom: 2em;
-	}
-	#menu-toggle, .toggle-label {
-			display: none;
-		}
-	nav ul {
-		padding: 0;
-		margin: 0;
-		list-style: none;
-		min-height: 0;
-	}
-	nav li {
-		display: inline-block;
-	}
-	nav li a {
-		font: 1em 'Open Sans', 'Oswald', 'Helvetica Narrow', Arial, sans-serif;
-		color: white;
-		background: #42659A;
-		margin-right: 0.5em;
-		padding: .25em 1em;
-		display: inline-block;
-		text-decoration: none;
-		letter-spacing: 0.1em;
-	}
-	nav li a:hover {
-		color: white;
-		background: #333;
-	}
-	/* -------------------------------------------------- 
-	   article styles
-	-----------------------------------------------------*/
-	article p {
-		font-size: 1.000em;
-		line-height: 1.5;
-	}
-	a.more {
-		margin: 0.5em 0;
-	}
-	/* -------------------------------------------------- 
-	   main footer styles
-	-----------------------------------------------------*/
-	.legal {
-		text-align: center;
-	}
-	}
