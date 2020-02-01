@@ -10,14 +10,16 @@ As I'm learning Rust, the first unique concept I've encountered was *Ownership*.
 
 ### Ownership In The Real World
 
-Rust designers didn't invent *Ownership*. It is all around us in the real world. Most objects around us are owned by someone. We have various rules on how to borrow these objects, how to share them, who can use them, and what we can with them. Therefore it is not a wonder *ownership* has leaked into the world of computer programming. Even if no one has mentioned it before, any software had to deal with *ownership*. No matter at what programming language it was written. Many concepts related to ownership are already there: const variable (it is mine, don't change it!), pointers & references (you can change my object, but please let me know, and let's pray we did everything right otherwise many unfortunate things will happen). The brilliance of Rust design is just naming it and turning it into a first-class citizen within the language. This decision is an integral part of easing development and avoiding different kinds of common pitfalls. 
+Rust designers didn't invent *Ownership*. It is all around us in the real world. Most objects around us are owned by someone. We have various rules on how to borrow these objects, how to share them, who can use them, and what we can do with them. Therefore it is not a wonder *ownership* has leaked into the world of computer programming. Even if no one has mentioned it before, any software had to deal with *ownership*. No matter at what programming language it was written. Many concepts related to ownership are already there: const variable (it is mine, don't change it!), pointers & references (you can change my object, but please let me know, and let's pray we did everything right otherwise many unfortunate things will happen). The brilliance of Rust design is just naming it and turning it into a first-class citizen within the language. This decision is an integral part of easing development and avoiding different kinds of common pitfalls. 
 
 ### Ownership In Rust
 
 Ownership is covered in detail at the Rust Book [here](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html "Ownership at Rust Book"). While it is probably the best way to get the full picture of *ownership* I want to cover the basics, without getting into the details of the *stack and heap*, which I don't find to be an integral part of the *ownership* concept. I think the rules from the **rust book* are a good start for this subject:
 
 > 1) Each value in Rust has a variable that’s called its owner.
+
 > 2) There can only be one owner at a time.
+
 > 3) When the owner goes out of *scope*, the value will be *dropped*.
 
 #### Each Value in Rust has a variable that's called its owner.
@@ -40,7 +42,7 @@ This code won't compile. We now have 2 owners for the same data, hence breaking 
 
 #### When the owner goes out of *scope*, the value will be *dropped*
 This rule introduces 2 terms, *scope* and *dropped*. Let's describe them briefly.
-*Scope* is a part of a program, with 2 practical implications. The first variables are known only through the *scope* they were introduced. The second, as this rule state, the values associated with those variables are dropped at the end of the *scope*. What mark a *scope*? Usually its the curly braces `{}`. In Rust, scope has one more implication, it returns a value, but this is for another day. For the second term, *dropped*, at least conceptually you can view it as being destroyed. After being dropped, you can't access the value anymore. Now let's look at the following example:
+*Scope* is a part of a program, with 2 practical implications. The first is variables are known only inside the *scope* they were introduced. The second, as this rule state, the values associated with those variables are dropped at the end of the *scope*. What mark a *scope*? Usually its the curly braces `{}`. In Rust, scope has one more implication, it returns a value, but this is for another day. For the second term, *dropped*, at least conceptually you can view it as being destroyed. After being dropped, you can't access the value anymore. Now let's look at the following example:
 
 ```rust
 {
