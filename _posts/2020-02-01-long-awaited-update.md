@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Long break coming to an end"
-date:   2020-02-01
+date:   2020-2-01
 tags: [Rust, Rust for OOP, Update]
 excerpt_separator: <!--more-->
 ---
