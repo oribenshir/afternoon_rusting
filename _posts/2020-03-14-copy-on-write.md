@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Optimizations That Aren't, Or Are They?"
-date:   2020-03-14
+date:   2020-3-14
 tags: [Rust, C++, Cow, Optimizations]
 excerpt_separator: <!--more-->
 ---
