@@ -11,6 +11,7 @@ I want to start the series with multiple mutable references. We've just learned 
 
 Other Post in the Series:
 * [Series Introduction]({{site.url}}/{% post_url 2020-05-07-the-small-things %} "Series Introduction").
+* [Multiple Mutable References And Closures]({{site.url}}/{% post_url 2020-06-19-multiple-mutable-references %} "Multiple Mutable References And Closures").
 
 ### Why are we here
 ```rust

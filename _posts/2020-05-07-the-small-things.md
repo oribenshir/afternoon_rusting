@@ -15,3 +15,4 @@ An important disclaimer is required. The idea is to get productive and fast. Som
 
 Other Post in the Series:
 * [Multiple Mutable References]({{site.url}}/{% post_url 2020-05-08-mutable-reference %} "Multiple Mutable References").
+* [Multiple Mutable References And Closures]({{site.url}}/{% post_url 2020-06-19-multiple-mutable-references %} "Multiple Mutable References And Closures").
