@@ -12,6 +12,7 @@ I want to start the series with multiple mutable references. We've just learned 
 Other Post in the Series:
 * [Series Introduction]({{site.url}}/{% post_url 2020-05-07-the-small-things %} "Series Introduction").
 * [Multiple Mutable References And Closures]({{site.url}}/{% post_url 2020-06-19-multiple-mutable-references %} "Multiple Mutable References And Closures").
+* [Accessing Smart Pointers]({{site.url}}/{% post_url 2020-07-11-deref-smart-pointer %} "Accessing Smart Pointers").
 
 ### Why are we here
 ```rust
@@ -105,10 +106,10 @@ While the last solution is not the most elegant, it tends to work. So don't be a
 1. Minimize or eliminate the period in which you keep around mutable references to struct fields.
 2. Don't be afraid to create functions that don't take self, but only a specific field of it.
 
-#### Sidenote 
+### Sidenote 
 If you are confused with dereferencing and referencing syntax. And mostly why sometimes it is required while at other times it doesn't you are not alone. I was confused about it as well when starting to write Rust. It tends to come quite quickly, and until it does, just experiment while letting the Rust compiler to guide you. I currently plan for the third post in this series to address it more appropriately.
 
-#### Resources
+### Resources
 * More about [Splitting Borrow](https://doc.rust-lang.org/nomicon/borrow-splitting.html "splitting borrow")
 * For the eager ones, more about dereferencing [here](https://doc.rust-lang.org/1.27.2/book/second-edition/ch15-02-deref.html?highlight=deref,coer#implicit-deref-coercions-with-functions-and-methods "dereferencing"). again I'll touch it on the third part.
 

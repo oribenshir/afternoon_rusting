@@ -12,6 +12,7 @@ Last time we've seen an error related to multiple mutable references to a variab
 Other Post in the Series:
 * [Series Introduction]({{site.url}}/{% post_url 2020-05-07-the-small-things %} "Series Introduction").
 * [Multiple Mutable References]({{site.url}}/{% post_url 2020-05-08-mutable-reference %} "Multiple Mutable References").
+* [Accessing Smart Pointers]({{site.url}}/{% post_url 2020-07-11-deref-smart-pointer %} "Accessing Smart Pointers").
 
 ### Why are we here
 ```rust
@@ -109,12 +110,12 @@ The last option to solve this problem is not to create a structure that contains
 3. Put "related" stuff in the same module, not the same struct
 
 
-#### Sidenote 
+### Sidenote 
 I barely touched the topic of references and closures. For instance, we haven't look at how long the closure borrows the server. This issue can be quite challenging, and I might write about it one day (although not really on the table at the moment). But there are some very well written posts about this topic, for instance, look at this [post](https://stevedonovan.github.io/rustifications/2018/08/18/rust-closures-are-hard.html "rust closures are hard")
 
-#### Resources
+### Resources
 * More about destructuring structs [here](https://doc.rust-lang.org/book/ch18-03-pattern-syntax.html#destructuring-structs "destructuring structs")
 * Great post about [closures and lifetimes](https://stevedonovan.github.io/rustifications/2018/08/18/rust-closures-are-hard.html "rust closures are hard")
 
-#### Coming Next
+### Coming Next
 A little about dereferencing, mutexes, and coercions.
